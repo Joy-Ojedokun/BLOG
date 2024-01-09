@@ -1,0 +1,293 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    background-color: orangered;
+    height: 60%;
+    border-bottom-left-radius: 60px;
+}
+
+.login {
+    display: flex;
+    color: white;
+    gap: 3em;
+    margin-top: 10px;
+}
+
+.jj {
+    display: flex;
+    justify-content: space-around;
+}
+
+.grow {
+    color: white;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+}
+
+.log {
+    color: white;
+    justify-content: center;
+    margin-top: 40px;
+    display: flex;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    border-radius: 4rem;
+    background-color: white;
+    color: red;
+    border: none;
+}
+
+.more {
+    width: 90px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    border-color: white;
+    border: 5px;
+}
+
+.free {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.for {
+    width: 90px;
+    height: 30px;
+    margin-bottom: 60px;
+}
+
+.editing {
+    margin-top: 20%;
+    margin-bottom: 20px;
+}
+
+.fit {
+    margin-left: 90px;
+}
+
+.one {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user {
+    margin-left: 90px;
+}
+
+.art {
+    height: 413px;
+    display: flex;
+    justify-content: right;
+    background-color: hsl(237, 23%, 32%);
+    color: white;
+    position: relative;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.img-cont {
+    position: absolute;
+    top: -62px;
+    left: 0;
+    margin-left: 10%;
+}
+
+.open {
+    margin-top: 120px;
+}
+
+.edit {
+    width: 50%;
+}
+
+/* .future {
+    margin-top: 60px;
+} */
+
+.simple {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    color: white;
+    border-top-right-radius: 80px;
+}
+
+h5 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.pricing {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.power {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.desk {
+    width: 50%;
+    margin-top: 20px;
+}
+
+.laptop {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.speed {
+    margin-top: 70px;
+    margin-right: 10%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 20%; */
+}
+
+.products {
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    gap: 3em;
+}
+
+
+@media screen and (max-width: 500px) {
+    .one {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .future p {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .art p {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .future {
+        margin: 1em;
+    }
+
+    .edit {
+        height: 40%;
+        width: 50%;
+    }
+
+    .art {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .open p {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .open h2 {
+        font-size: 30px;
+    }
+
+    .pricing h2 {
+        font-size: 30px;
+    }
+
+    .pricing h5 {
+        font-size: 25px;
+    }
+
+    .pricing {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pricing p {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+
+    .open {
+        margin: auto;
+    }
+
+    .login {
+        gap: 1em;
+    }
+
+    .fit {
+        margin: 0 2em;
+    }
+
+    .user {
+        margin: 0 2em;
+    }
+
+    .jj {
+        overflow: hidden;
+        position: relative;
+        display: none;
+    }
+
+    .desk img {
+        height: 280px;
+        width: 380px;
+        align-items: center;
+    }
+
+    h1 {
+        margin: 1em;
+    }
+
+    .one {
+        margin: 1em;
+    }
+
+    .laptop {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .products {
+        gap: 1.5em;
+    }
+
+}
