@@ -5,7 +5,7 @@
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 header {
@@ -90,21 +90,39 @@ button {
 }
 
 .art {
-    height: 413px;
     display: flex;
-    justify-content: right;
-    background-color: hsl(237, 23%, 32%);
+    justify-content: space-between;
+    background: url(./IMAGES/bg-pattern-circles.svg), hsl(237, 23%, 32%);
     color: white;
     position: relative;
+    align-items: center;
     border-top-right-radius: 80px;
     border-bottom-left-radius: 80px;
+    padding: 0 clamp(1rem, 8vw, 10rem);
+    margin: 3rem 0;
 }
 
 .img-cont {
-    position: absolute;
-    top: -62px;
-    left: 0;
-    margin-left: 10%;
+    margin-top: -5%;
+    margin-bottom: -9%;
+}
+
+.speed {
+    padding: 2rem 0;
+}
+
+@media (max-width: 500px) {
+    .art {
+        margin-top: 10rem;
+    }
+
+    .img-cont {
+        margin-top: -35%;
+    }
+
+    .speed {
+        padding-bottom: 4rem;
+    }
 }
 
 .open {
@@ -136,7 +154,7 @@ h5 {
 }
 
 h2 {
-    margin-top: 80px;
+    /* margin-top: 80px; */
 }
 
 .pricing {
@@ -160,14 +178,18 @@ h2 {
     justify-content: space-around;
 }
 
+.hamburger {
+    display: none;
+}
+
 .content {
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .speed {
-    margin-top: 70px;
-    margin-right: 10%;
+    /* margin-top: 70px; */
+    /* margin-right: 10%; */
 }
 
 h1 {
@@ -221,10 +243,12 @@ h1 {
     .open p {
         font-size: 20px;
         font-family: sans-serif;
+        margin: 1em;
     }
 
     .open h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .pricing h2 {
@@ -235,9 +259,15 @@ h1 {
         font-size: 25px;
     }
 
+    /* header {
+        max-width: 100%;
+        overflow: hidden;
+    } */
+
     .pricing {
         align-items: center;
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .pricing p {
@@ -245,26 +275,29 @@ h1 {
         font-family: sans-serif;
     }
 
+    .products p {
+        display: none;
+    }
+
     .open {
         margin: auto;
     }
 
     .login {
-        gap: 1em;
+        display: none;
     }
 
     .fit {
         margin: 0 2em;
     }
 
-    .user {
-        margin: 0 2em;
+    .hamburger {
+        margin: 1em;
+        display: block;
     }
 
-    .jj {
-        overflow: hidden;
-        position: relative;
-        display: none;
+    .user {
+        margin: 0 2em;
     }
 
     .desk img {
